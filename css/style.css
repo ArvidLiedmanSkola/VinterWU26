@@ -1,1 +1,53 @@
-/* Här skrivs all din CSS */
+body {
+    background-color: #C5AEEC;
+    margin: 0;
+}
+
+#wrapper {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 16rem 8rem 8rem 8rem 8rem;
+    grid-template-areas:
+    'hd hd hd hd'
+    'nv1 mn mn mn'
+    'nv2 mn mn mn'
+    'nv3 mn mn mn'
+    'ft ft ft ft'
+}
+
+header{
+    grid-area: hd;
+    background-color: #49BBA1;
+}
+
+#navbox{
+    row-gap: 4rem;
+}
+
+nav#nav1{
+    grid-area: nv1;
+    background-color: #49BBA1;
+    padding-top: 4rem;
+}
+
+nav#nav2{
+    grid-area: nv2;
+    background-color: #49BBA1;
+    padding-top: 4rem;
+}
+
+nav#nav3{
+    grid-area: nv3;
+    background-color: #49BBA1;
+    padding-top: 4rem;
+}
+
+main{
+    grid-area: mn;
+}
+
+footer{                                                                                 
+    grid-area: ft;
+}
+ 
