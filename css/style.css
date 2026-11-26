@@ -10,44 +10,104 @@ body {
     grid-template-rows: 16rem 8rem 8rem 8rem 8rem;
     grid-template-areas:
     'hd hd hd hd'
-    'nv1 mn mn mn'
-    'nv2 mn mn mn'
-    'nv3 mn mn mn'
+    'nv mn mn mn'
+    'nv mn mn mn'
+    'nv mn mn mn'
     'ft ft ft ft'
 }
 
 header{
     grid-area: hd;
     background-color: #49BBA1;
+    text-align: center;
+    font-size: 400%;
+    color: #7E57C2;
+    font-family: 'chewy';
+    border-bottom: 8px solid #2BA388;
 }
 
 #navbox{
-    row-gap: 4rem;
+    display: grid;
+    margin-top: 3rem;
+    row-gap: 3rem;
+    grid-area: nv;
+    grid-template-areas: 
+    'nv1'
+    'nv2'
+    'nv3'
 }
 
 nav#nav1{
     grid-area: nv1;
     background-color: #49BBA1;
-    padding-top: 4rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-right: 5px solid #2BA388;
+    border-bottom: 5px solid #2BA388;
+    border-top: 5px solid #2BA388;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+    font-size: 150%;
+    font-family: 'DynaPuff';
 }
 
 nav#nav2{
     grid-area: nv2;
     background-color: #49BBA1;
-    padding-top: 4rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-right: 5px solid #2BA388;
+    border-bottom: 5px solid #2BA388;
+    border-top: 5px solid #2BA388;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+    font-size: 150%;
+    font-family: 'DynaPuff';
 }
 
 nav#nav3{
     grid-area: nv3;
     background-color: #49BBA1;
-    padding-top: 4rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-right: 5px solid #2BA388;
+    border-bottom: 5px solid #2BA388;
+    border-top: 5px solid #2BA388;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+    font-size: 150%;
+    font-family: 'DynaPuff';
 }
 
 main{
     grid-area: mn;
+    background-color: #FFCF8A;
+    width: 60%;
+    height: 80rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 8vw 0px;
+    border-radius: 4rem;
+    border: 6px solid #FABE66
 }
 
 footer{                                                                                 
     grid-area: ft;
+    background-color: #7E57C2;
+    border-top: 6px solid #6339AC;
+    margin-top: 120vh;
+    height: 8rem;
 }
  
